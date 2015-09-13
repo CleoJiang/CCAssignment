@@ -5,7 +5,7 @@ package ch1;
  * Created by minhuij on 9/11/15.
  * Discuss with junzhou1.
  */
-public class Solution1_3 {
+public class Solution13 {
     public static char[] URlify(char[] c, int num) {
         int count = 0;
 

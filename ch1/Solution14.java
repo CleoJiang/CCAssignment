@@ -3,7 +3,7 @@ package ch1;
 /**
  * Created by minhuij on 9/11/15.
  */
-public class Solution1_4 {
+public class Solution14 {
     public static boolean palindrome_permutation(String s){
 
         char c[] = s.toCharArray();

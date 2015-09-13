@@ -4,7 +4,7 @@ package ch1;
 /**
  * Created by minhuij on 9/11/15.
  */
-public class Solution1_7 {
+public class Solution17 {
     public static int[][] rotate_image(int[][] matrix){
         int n = matrix.length;
         for(int i=0; i<n; i++){

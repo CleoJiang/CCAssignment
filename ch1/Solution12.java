@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * Created by minhuij on 9/11/15.
  */
-public class Solution1_2 {
+public class Solution12 {
     public static boolean is_permutation(String s1,String s2){
         char[] c1 = s1.toCharArray();
         char[] c2 = s2.toCharArray();
