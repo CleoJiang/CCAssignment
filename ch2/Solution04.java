@@ -6,28 +6,27 @@ package ch2;
 public class Solution04 {
 
     public static ListNode partition(ListNode head, int target) {
-        ListNode ps,pb,pe,psh,pbh,peh,p;
-        psh=pbh=peh=head;
-        ps=pb=pe=head;
-        psh.next=ps;pbh.next=pb;peh.next=pe;
-        p = head.next;
+        ListNode pSmall, pBig, p;
+        ListNode pBigHead = new ListNode(0);
+        ListNode pSmallHead = new ListNode(0);
 
+        pBig = pBigHead;
+        pSmall=pSmallHead;
+
+        p = head.next;
         while (p != null) {
             if (p.val < target) {
-                ps.next = p;
-                ps = ps.next;
-            } else if (p.val > target) {
-                pb.next = p;
-                pb = pb.next;
-            } else {
-                pe.next = p;
-                pe = pe.next;
+                pSmall.next = p;
+                pSmall = pSmall.next;
+            } else{
+                pBig.next = p;
+                pBig = pBig.next;
             }
             p = p.next;
         }
-        ps.next=peh.next;
-        pe.next=pbh.next;
-        return psh.next;
+        pSmall.next = pBigHead.next;
+        pBig.next=null;
+        return pSmallHead.next;
 
 
     }
