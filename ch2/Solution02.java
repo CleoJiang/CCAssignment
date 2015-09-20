@@ -1,20 +1,23 @@
 package ch2;
 
 public class Solution02 {
-    public static ListNode return_ktolast(ListNode head){
-        ListNode pf,pl;
-        pf=head.next;
-        while (pf.next!=null){
-            pl=pf;
-            int count=0;
-            while (count<=5 && pl.next!=null){
-                pl=pl.next;
-                count++;
-            }
-            if (count==5 && pl.next==null) return pf;
-            pf=pf.next;
+    public static ListNode return_ktolast(ListNode N,int k){
+        ListNode pkth,ptail;
+        pkth=ptail=N;
+
+        int count=1;
+        while(true){
+            if(ptail.next==null) return null;
+            if(count>=k) break;
+            count++;
+            ptail=ptail.next;
         }
-        return null;
+        while(true){
+            if (ptail.next==null) break;
+            pkth=pkth.next;
+            ptail=ptail.next;
+        }
+        return pkth;
     }
 
 

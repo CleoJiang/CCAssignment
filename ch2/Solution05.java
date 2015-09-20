@@ -8,7 +8,7 @@ public class Solution05 {
     public static ListNode sum_lists(ListNode head1, ListNode head2){
         ListNode a = head1.next;
         ListNode b = head2.next;
-        ListNode dummy = null;
+        ListNode dummy = new ListNode(0);
         ListNode c=dummy;
         int carry = 0;
         while(a!=null || b!=null){
