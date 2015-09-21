@@ -36,10 +36,10 @@ public class Solution01 {
             return stackValue[topIndex(stackNum)];
         }
         public boolean empty(int stackNum){
-            return stackSize[stackNum]==0);
+            return stackSize[stackNum]==0;
         }
         public boolean full(int stackNum){
-            return stackSize[stackNum]==stackCapacity);
+            return stackSize[stackNum]==stackCapacity;
 
         }
         public int topIndex(int stackNum){
