@@ -15,7 +15,9 @@ public class Solution11 {
             this.val=x;
         }
 
-        public int size();
+        public int size(){
+            return size;
+        };
 
         public treeNode getNode(int i){
             int leftSize;
@@ -28,7 +30,9 @@ public class Solution11 {
         }
     }
 
-    public void getRandomNode
+    public void getRandomNode(){
+
+    }
 
 
 

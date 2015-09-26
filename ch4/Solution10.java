@@ -10,12 +10,10 @@ public class Solution10 {
     }
 
     boolean subtree(TreeNode T1, TreeNode T2){
-        if (T1==null) {
-            return false;
-        }else if(T1.val==T2.val && match(T1,T2)){
+        if (T1==null) return false;
+        if(T1.val==T2.val && match(T1,T2)){
             return true;
-        }
-        return (match(T1.left, T2) || match(T1.right, T2));
+        }else return (match(T1.left, T2) || match(T1.right, T2));
     }
 
     private boolean match(TreeNode t1, TreeNode t2) {
