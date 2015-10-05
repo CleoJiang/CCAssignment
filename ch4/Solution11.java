@@ -41,7 +41,7 @@ public class Solution11 {
                 if (left==null) leftSize=0;
                 else leftSize=left.size;
 
-                if (i<leftSize) return left.getNode(i);
+                if (i<leftSize) return this.left.getNode(i);
                 else if (i==leftSize) return this;
                 else return right.getNode(i-(leftSize+1));
             }

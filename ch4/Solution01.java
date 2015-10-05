@@ -28,13 +28,7 @@ public class Solution01 {
         return false;
 
     }
-
-
-
-
-
     public class GraphNode {
-
 
         int val;
         LinkedList<GraphNode> adjacent;
