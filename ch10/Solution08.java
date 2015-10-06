@@ -7,7 +7,7 @@ package ch10;
  */
 public class Solution08 {
 
-    // use a int array as a bit vector to store existence for all 32000 different Integer.
+    // Use a int array as a bit vector to store existence for all 32000 different Integer.
 
     void checkDuplicate(int[] array){
         BitSet bitSet = new BitSet(32000);
