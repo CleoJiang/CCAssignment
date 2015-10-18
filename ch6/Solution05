@@ -1,0 +1,9 @@
+Only use 5 quart jug and 3 quart jug to get 4 quart.
+Here is the solution which shows the water quantity in 3 jug.
+     5 quart jug        3 quart jug   action
+         5                   0        ->5
+         2                   3        5->3
+         2                   0        3->
+         0                   2        5->3
+         5                   2        ->5
+         4                   3        5->3
