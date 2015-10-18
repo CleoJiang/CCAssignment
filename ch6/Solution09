@@ -1,0 +1,8 @@
+ Kth door is toggle on rounds of all its multiply factors including 1 and itself.
+ if the toggle number is even, this door remain closed as the initial status.
+ if the toggle number is odd, this door will changed to open.
+ Our task is to find these doors with odd number multiply factors.
+
+ if we write down the sequence of toggle results. we find that:
+ When k is some number's square, it has odd number toggle.
+ from 1 to 100, there are 10 such square numbers, so finally, there are 10 doors open.
