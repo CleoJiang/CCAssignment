@@ -1,0 +1,12 @@
+If there is only one blueEyed, he will find everyone else is normal and at least one has blueEyes.
+He will immediately know it's himself, he will leave the first night.
+
+If there are 2 people blueEyed. They will see each other and wondering if themselves are blueEyed.
+If there is only one, that person will leave first night. if on the second day, that person don't leave.
+They know they are both blueEyed. They will leave on the second day.
+
+if there are 3 people blueEyed. They will wonder if they are blueEyed except the other 2 blueEyed people
+they see. If only 2 people blueEyed. they will both leave on the second day. So when the third day comes,
+that 2 blueEyed ones still there. They know themselves are blueEyed, too. They will leave on the third day.
+
+Keep this process, if there are K blueEyed people, they will need K days to leave the island.
