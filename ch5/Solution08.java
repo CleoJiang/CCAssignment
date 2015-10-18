@@ -22,6 +22,7 @@ public class Solution08 {
         }
         // deal with the left digit in the x1byte and x2byte
         // this part could be optimized by using mask but not set the digit one by one.
+        //
         if (x1Byte==x2Byte){// if x1 and x2 are in the same byte
             for(int i = x2Shift; i<=x1Shift; i++){
                 screen[x1Byte]&= (byte)(1<<i);
