@@ -1,0 +1,12 @@
+probability to win game 1:p
+probability to win game 2: p^3+c13*p^2(1-p)
+the domain of p is (0,1)
+
+To decide the time to choose different game is to find the game with bigger chance of winning.
+We should propose the relation of two probability and find the solution under different value of p.
+
+if p>p^3+c13*p^2(1-p)
+p<0.5 or p>1(cut off)
+So when p<0.5, we should choose game1
+when p>0.5, we should choose game2
+When p=0.5, either game has the same chance of winning.

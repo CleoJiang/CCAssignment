@@ -1,0 +1,6 @@
+Every ants have 2 direction to go, so the total kinds of their direction combination is:2^n
+There are only two conditions that there is no collision happens:all ants go clockwise or opposite clockwise.
+The probability of avoiding collision then is: 2/2^n
+So the probability of collision is complement of it: 1 - 2/2^n
+
+when n=3, probability of collision is: 1 - 2/2^3 = 3/4
