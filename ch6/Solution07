@@ -1,0 +1,3 @@
+We should compute the expectation of a family boys number in a generation. If a family has n boy.
+E = 0*1/2 + 1*1/4 + 2*1/8 + 3*1/16 + ...= sum of n/2^n
+if we choose a n=6, E=120/128. When we let n bigger, E would more near to 1.

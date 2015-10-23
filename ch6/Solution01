@@ -1,0 +1,5 @@
+Give every bottle a number from 1-20.
+Take one pill from the first bottle, two pills from the second bottle...
+If every pills in these bottle is 1.0 gram. The total weight of these taken-out bottle should be 1+2+3...+20=210 grams.
+So n=(WEIGHT-210)/0.1 is the pills that has 1.1 gram.
+So there is n pills that is 1.1 gram, the n bottle is the overweight bottle.

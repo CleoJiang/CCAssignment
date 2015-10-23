@@ -1,1 +1,4 @@
-
+There is odd number squares in the first row, so we should fill the last square by borrow a square from the second row.
+When we fill the second row, its squares number is also odd after borrowed by first row.
+ Keep repeating the process, when we fill in the last row, it has nowhere to borrow square to fill its last square.
+ So it can't be filled by two-square Dominos.
