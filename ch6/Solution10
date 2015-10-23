@@ -1,0 +1,8 @@
+Use binary integer to give order number to every bottle.
+10 digits is enough to represent all 1000 bottles.
+There are 10 strips, which could be map to the 10 digits.
+Look through every digit of every bottle order number, each time at some digit we saw a 1, add that bottle to the strip
+it corresponds.
+Finally, we get several strips that change color.
+We get a ten digits number: which strip change color, set that digit 1.
+The bottle with the same binary integer order is the one which is poisonous.
