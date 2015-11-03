@@ -1,17 +1,20 @@
 package ch4;
 
 /**
- * Created by apple on 9/23/15.
+ * Created by apple on 10/29/15.
  */
 public class TreeNode {
-    int val;
-    int size;
-    TreeNode left;
-    TreeNode right;
-    TreeNode parent;
-    public TreeNode(int x){
-        this.val=x;
+    public TreeNode left;
+    public TreeNode right;
+    public int val;
+    //        public TreeNode() {
+//            left = null;
+//            right = null;
+//            value = 0;
+//        }
+    public TreeNode(int data) {
+        left = null;
+        right = null;
+        val = data;
     }
-
-
 }
