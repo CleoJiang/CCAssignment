@@ -4,23 +4,18 @@ package ch4;
  * Created by apple on 9/23/15.
  */
 public class Solution05 {
-    boolean isBST(TreeNode root){
-        int[] array = new int[root.size];
-        makeArray(root, array);
-        for (int i=0; i<array.length-2; i++){
-            if (array[i]>=array[i+1]) return false;
-        }
-        return true;
+    TreeNode pre = null;
+    public boolean isValidBST(TreeNode root) {
+        return isMonoIncreasing(root);
     }
-    int m=0;
-    void makeArray(TreeNode root,int[] array){
-        if (root==null) return;
-        makeArray(root.left,array);
-        array[m]=root.val;
-        m++;
-        makeArray(root.right,array);
-
-
+    private boolean isMonoIncreasing(TreeNode root){
+        if (root==null) return true;
+        if (isMonoIncreasing(root.left)){
+            if (pre!=null && root.val<=pre.val) return false;
+            pre = root;
+            return isMonoIncreasing(root.right);
+        }
+        return false;
     }
 
 
